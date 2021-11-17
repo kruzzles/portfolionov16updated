@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon.png">
+    <title> Kruz King | Freelance Web Developer</title>
+</head>
+<body style="background-color: rgb(0, 0, 0);">
+
+    <!-- socials -->
+        <div id="wrapper5">
+            <div id="halfOne5">
+                <h1> SOC </h1>
+                <div id="bottomHomeBtn">
+                    <a href="index.html"><div class="homeBtnWrap"><button id="returnn" onmouseover="homeShadow()" onmouseout="homeNoShadow()"> RETURN &nbsp;</button></a></div>
+                </div>
+            </div>
+            <div id="halfTwo5">
+                <h1> IALS </h1>
+                <div id="bottomHomeBtn2">
+                    <a href="index.html"><div class="homeBtnWrap"><button id="toHome" onmouseover="homeShadow()" onmouseout="homeNoShadow()"> TO HOME </button></a></div>
+                </div>
+            </div>
+        </div>
+        <div id="socials">
+            <a href="https://www.youtube.com/kruzzles"><div class="youtube"></div></a>
+            <a href="contact.html"><div class="email"></div></a>
+            <a href="https://www.instagram.com/kruzzles"><div class="instagram"></div></a>
+            <a href="https://kruz-kings-store.creator-spring.com/"><div class="teespring"></div></a>
+        </div>
+        <!-- socials -->
+
+
+        <!-- top navigation -->
+
+        <div id="topNavIcon">
+            <img src="images/hamburger.png" onclick="openNav()" id="navImg">
+        </div>
+        <div id="topXIcon">
+            <img src="images/x.png" onclick="closeNav()" id="xImg">
+        </div>
+        <div id="navLinks">
+            <p style="margin-top: 14vh;"><a href="index.html"> HOME </a></p>
+            <p style="margin-top: 5vh;"><a href="about.html"> ABOUT </a></p>
+            <p style="margin-top: 5vh"><a href="portfolio.html"> PORTFOLIO </a></p>
+            <p style="margin-top: 5vh"><a href="purchase.html"> PURCHASE </a></p>
+            <p style="margin-top: 5vh"><a href="socials.html"> SOCIALS </a></p>
+            <p style="margin-top: 5vh"><a href="contact.html"> CONTACT </a></p>
+        </div>
+
+        <!-- top navigation -->
+        <script>
+
+                const topNavIcon = document.getElementById("topNavIcon");
+                topNavIcon.style.display = "block";
+
+                var wrapper2 = document.getElementById("wrapper2");
+                var wrapper3 = document.getElementById("wrapper3");
+
+
+            
+
+            function shadow() {
+                var standard = document.getElementById("standard");
+                var standard2 = document.getElementById("standard2");
+                standard.style.cursor = "pointer";
+                standard2.style.cursor = "pointer";
+                standard.style.boxShadow = " 0 0 50px 5px";
+                standard2.style.boxShadow = " 0 0 50px 5px";
+            }
+
+            function noShadow() {
+                var standard = document.getElementById("standard");
+                var standard2 = document.getElementById("standard2");
+                standard.style.cursor = "none";
+                standard2.style.cursor = "none";
+                standard.style.boxShadow = "none";
+                standard2.style.boxShadow = "none";
+            }
+
+            function colors() {
+                var mid = document.getElementById("middleBtn");
+                var mid2 = document.getElementById("middle2Btn");
+                var midd = document.getElementById("mid");
+
+                mid.style.backgroundColor = "#e94b3cff";
+                mid.style.color = "#2d2926ff";
+
+
+                mid2.style.backgroundColor = "#2d2926ff";
+                mid2.style.color = "#e94b3cff";
+                mid2.style.cursor = "pointer";
+            }
+
+            function noColors() {
+                var mid = document.getElementById("middleBtn");
+                var mid2 = document.getElementById("middle2Btn");
+                mid.style.backgroundColor = "#2d2926ff";
+                mid.style.color = "#e94b3cff";
+                mid2.style.backgroundColor = "#e94b3cff";
+                mid2.style.color = "#2d2926ff";
+            }
+
+            function open() {
+                window.open('www.https://google.com');
+            }
+
+            function homeShadow() {
+                var returnn = document.getElementById("returnn");
+                var toHome = document.getElementById("toHome");
+
+                returnn.style.backgroundColor = "white";
+                returnn.style.border = "white";
+                returnn.style.color = "black";
+                returnn.style.transition = "1s";
+                toHome.style.backgroundColor = "white";
+                toHome.style.border = "white";
+                toHome.style.color = "black";
+                toHome.style.transition = "1s";
+            }
+
+            function homeNoShadow() {
+                var returnn = document.getElementById("returnn");
+                var toHome = document.getElementById("toHome");
+
+                returnn.style.backgroundColor = "#e94b3cff";
+                returnn.style.color = "white";
+                toHome.style.backgroundColor = "#2d2926ff";
+                toHome.style.border = "white";
+                toHome.style.color = "white";
+            }
+
+            function openNav() {
+                const navLinks = document.getElementById("navLinks");
+                const navImg = document.getElementById("navImg");
+                const xImg = document.getElementById("xImg");
+                navImg.style.transform = "rotate(90deg)";
+                navImg.style.marginLeft = "-100px";
+                navImg.style.transition = "1s";
+                navLinks.style.marginLeft = "0vh";
+                navLinks.style.transition = "1s";
+
+                xImg.style.marginLeft = "2vw";
+                xImg.style.transform = "rotate(360deg)";
+                xImg.style.transition = "1s";
+            }
+
+            function closeNav() {
+                const navLinks = document.getElementById("navLinks");
+                const navImg = document.getElementById("navImg");
+                const xImg = document.getElementById("xImg");
+                xImg.style.marginLeft = "-100px";
+                xImg.style.transform = "rotate(90deg)";
+                xImg.style.transition = "1s";
+
+                navImg.style.transform = "rotate(360deg)";
+                navImg.style.marginLeft = "0vw";
+                navImg.style.transition = "1s";
+                navLinks.style.marginLeft = "-100vh";
+                navLinks.style.transition = "1s";
+            }
+            
+   
+        </script>
+    </div>
+    <!-- title page -->
+</body>
+</html>
